@@ -27,7 +27,7 @@
 
                 <ul class="header-list list">
                     <li class="header-list-item list">
-                        <a class="header-link link"
+                        <a class="header-link studio curent link"
                             href="./index.html">Studio</a>
                     </li>
                     <li class="header-list-item list">
@@ -61,7 +61,8 @@
             <div class="container">
                 <h1 class="about-title">Effective Solutions
                     for Your Business</h1>
-                <button class="btn-primary" type="button">Order Service</button>
+                <button class="btn-primary" data-modal-open type="button">Order
+                    Service</button>
             </div>
         </section>
 
@@ -475,6 +476,15 @@
 
         </div>
     </footer>
-
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close class="modal-close">
+                <svg class="modal-close-btn">
+                    <use href="./images/sprite.svg#icon-close-black-18dp-2-1">
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
